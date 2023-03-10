@@ -1,0 +1,53 @@
+.form {
+    background: salmon;   
+    padding: 8px;
+    height: fit-content;
+}
+
+.form > h1 {
+    text-align: center;
+}
+
+.form div {
+    width: 100%;
+    display: flex;
+}
+
+.form input {
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 1.5em;
+    width: 100%;
+    outline: none;
+}
+
+.select {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.select select {
+    width: 60%;
+    border: none;
+    font-size: 1.5em;
+    border-bottom: 2px solid black;
+}
+
+.submit {
+    width: 30%;
+    font-size: 2em;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.submit:hover {
+    background: orange;
+}

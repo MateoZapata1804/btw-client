@@ -1,0 +1,24 @@
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+span button {
+    border: none;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3em;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0px 20px 0px 20px;
+}
+
+#delete {
+    background: salmon;
+}

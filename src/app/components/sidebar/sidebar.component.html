@@ -1,0 +1,15 @@
+<div class="parent">
+    <nav class="nav">
+        <span class="head">
+            <h1 style="color: darkorange; font-size: 1.5em;">BTW</h1>
+            <h6 style="color: orange">Project</h6>
+        </span>
+        <br><br>
+        <a *ngFor="let i of sources" href="{{ i.path }}">
+            {{ i.label }}
+        </a>
+    </nav>
+    <span class="main" id="main">
+        <ng-content></ng-content>
+    </span>
+</div>

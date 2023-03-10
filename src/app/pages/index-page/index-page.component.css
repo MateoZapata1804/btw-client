@@ -1,0 +1,27 @@
+.father {
+    width: 70%;
+}
+
+#delete {
+    border: none;
+    background: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3em;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#delete:hover{
+    background: rgb(212, 60, 91);
+}
+
+.msgBox {
+    background: limegreen;
+    padding: 10px;
+    font-size: 1.4em;
+    border-radius: 5px;
+}

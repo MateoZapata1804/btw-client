@@ -1,0 +1,30 @@
+<app-sidebar [flexCenter]="true">
+    <form [formGroup]="userForm" (ngSubmit)="onFormSubmit(userForm.value)" class="form">
+        <h1>Registrar Usuario</h1>
+        
+        <div>
+            <input type="text" formControlName="nombre" placeholder="Nombres" required>
+        </div>
+        <div>
+            <input type="text" formControlName="apellido1" placeholder="Primer apellido" required>
+            <input type="text" formControlName="apellido2" placeholder="Segundo apellido">
+        </div>
+        <div>
+            <input type="email" formControlName="email" placeholder="Correo electrónico" required>
+        </div>
+        <div class="select">
+            Rol del Usuario:
+            <select formControlName="rol">
+                <option *ngFor="let item of roles" [value]="item.roleId">{{item.roleName}}</option>
+            </select>
+        </div>
+        <div>
+            <input type="password" formControlName="clave" placeholder="Contraseña a asignar" required>
+        </div>
+
+        <div>
+            <button type="submit" class="submit" [disabled]="submitted">Registrar</button>
+            <span style="color: red" *ngIf="!userForm.valid">Faltan campos por llenar</span>
+        </div>
+    </form>
+</app-sidebar>
